@@ -1,0 +1,16 @@
+.glass {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Czerwone podświetlenie pól z błędem */
+.input-error {
+  border-color: #dc2626 !important;   /* czerwony */
+  box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.6);
+}
+
+/* Żeby przy focusie dalej było widać błąd */
+.input-error:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(248, 113, 113, 0.8);
+}

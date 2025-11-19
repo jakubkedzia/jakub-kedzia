@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jakub Kędzia – aplikacje, strony internetowe, boty | Częstochowa</title>
+  <meta name="description" content="Realizuję projekty dla firm i osób prywatnych: aplikacje webowe, integracje, boty, automatyzacje. Student informatyki (II stopień), po ukończonych studiach inżynierskich. React, Node.js, MongoDB, WebSockety." />
+  <meta name="author" content="Jakub Kędzia" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jakub Kędzia" />
+  <meta property="og:description" content="Aplikacje webowe na zamówienie, integracje, boty, automatyzacje. React / Node.js / MongoDB." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200" />
+  <meta property="og:locale" content="pl_PL" />
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f8ff', 100: '#d9ecff', 200: '#bfe0ff', 300: '#8bc2ff',
+              400: '#56a4ff', 500: '#2f8dff', 600: '#226fe0', 700: '#1a56b5',
+              800: '#163f82', 900: '#122f61'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Twój własny CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-gradient-to-br from-slate-100 to-slate-200 text-slate-800 selection:bg-brand-200">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 bg-white/70 glass border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 pt-3 pb-1 flex items-center justify-between">
+      <!-- LEWO: brand -->
+      <div class="flex-1">
+        <a href="#top" class="leading-tight">
+          <div class="font-bold text-xl text-slate-900">
+            Jakub <span class="text-brand-600">Kędzia</span>
+          </div>
+          <div class="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+            Aplikacje deweloperskie · Strony internetowe
+          </div>
+        </a>
+      </div>
+
+      <!-- ŚRODEK: menu -->
+      <nav class="hidden md:flex flex-1 justify-center gap-6 text-sm">
+        <a href="#uslugi" class="hover:text-brand-700">Usługi</a>
+        <a href="#realizacje" class="hover:text-brand-700">Realizacje</a>
+        <a href="#proces" class="hover:text-brand-700">Proces</a>
+        <a href="#cennik" class="hover:text-brand-700">Cennik</a>
+        <a href="#kontakt" class="hover:text-brand-700">Kontakt</a>
+      </nav>
+
+      <!-- PRAWO: przycisk -->
+      <div class="hidden md:flex flex-1 justify-end">
+        <a
+          href="#kontakt"
+          class="rounded-2xl bg-brand-600 px-4 py-2 text-white text-sm shadow hover:bg-brand-700"
+        >
+          Bezpłatna konsultacja
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 md:py-24">
+      <div class="max-w-6xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Tworzę dedykowane <span class="text-brand-700">aplikacje deweloperskie</span> oraz nowoczesne
+          <span class="text-brand-700">strony internetowe</span>, które realnie ułatwiają pracę firmom i osobom prywatnym w biznesie.
+        </h1>
+
+        <p class="mt-6 text-lg text-slate-600">
+          Buduję rozwiązania dopasowane do potrzeb — od prostych stron firmowych po zaawansowane aplikacje
+          , automatyzacje i integracje. Stawiam na jakość, przejrzystość oraz realną wartość dla klienta.
+        </p>
+
+        <p class="mt-4 text-base text-slate-600 leading-relaxed font-medium">
+          Jestem Jakub — programista tworzący rozwiązania dopasowane do realnych potrzeb.
+          Współpracuję z firmami i osobami prywatnymi, pomagając zamieniać pomysły
+          w dobrze działające produkty.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#kontakt" class="rounded-2xl bg-brand-600 px-5 py-3 text-white shadow hover:bg-brand-700">
+            Porozmawiajmy o Twoim projekcie
+          </a>
+          <a href="#realizacje" class="rounded-2xl border border-slate-300 px-5 py-3 hover:border-brand-600 hover:text-brand-700">
+            Zobacz realizacje
+          </a>
+        </div>
+
+        <div class="mt-6 text-sm text-slate-500">
+         • Czas realizacji od zaraz • Współpraca zdalna lub lokalnie
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USŁUGI + TECHNOLOGIE -->
+  <section id="uslugi" class="py-16 bg-slate-100">
+    <div class="mx-auto max-w-7xl px-4">
+      <h2 class="text-3xl md:text-4xl font-bold">Usługi i technologie</h2>
+      <p class="mt-2 text-slate-600 max-w-2xl">
+        Projektuję i wdrażam aplikacje, strony internetowe oraz integracje dopasowane do konkretnego projektu,
+        dobierając technologie pod faktyczne potrzeby projektu.
+      </p>
+
+      <div class="mt-8 rounded-3xl bg-white shadow-xl border border-slate-200 p-5 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- USŁUGI -->
+          <div class="rounded-2xl bg-gradient-to-br from-brand-50 to-white border border-slate-200 p-5">
+            <h3 class="font-semibold text-slate-900 text-lg">Usługi</h3>
+            <ul class="mt-3 space-y-3 text-sm text-slate-700">
+              <li class="flex items-start gap-2 border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
+                <p>Aplikacje deweloperskie tworzone na zamówienie — od MVP po gotowe systemy produkcyjne,</p>
+              </li>
+              <li class="flex items-start gap-2 border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
+                <p>Dedykowane strony internetowe dostosowane do branży i celów biznesowych,</p>
+              </li>
+              <li class="flex items-start gap-2 border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
+                <p>Integracje i automatyzacje procesów (API, webhooki, realtime),</p>
+              </li>
+              <li class="flex items-start gap-2 border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
+                <p>Scraping i agregacja danych,</p>
+              </li>
+              <li class="flex items-start gap-2 border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
+                <p>Administracja istniejących aplikacji oraz stron internetowych — aktualizacje, optymalizacje, monitoring, rozwój.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- STACK -->
+          <div class="rounded-2xl bg-gradient-to-br from-white to-brand-50 border border-slate-200 p-5">
+            <h3 class="font-semibold text-slate-900 text-lg">Stack (technologie)</h3>
+            <ul class="mt-3 space-y-3 text-sm text-slate-700">
+              <li class="flex items-start gap-2 border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
+                <p>React — nowoczesne interfejsy, komponenty, SPA/SSR.</p>
+              </li>
+              <li class="flex items-start gap-2 border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
+                <p>Node.js — backendy, API, logika biznesowa.</p>
+              </li>
+              <li class="flex items-start gap-2 border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
+                <p>Express — szybkie i skalowalne serwisy.</p>
+              </li>
+              <li class="flex items-start gap-2 border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
+                <p>C# — aplikacje serwerowe, API, automatyzacje.</p>
+              </li>
+              <li class="flex items-start gap-2 border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
+                <p>Python — analityka, skrypty, automatyzacje, scraping.</p>
+              </li>
+              <li class="flex items-start gap-2 border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
+                <p>WordPress — strony firmowe, wdrożenia, optymalizacja, rozbudowa.</p>
+              </li>
+              <li class="flex items-start gap-2 border-t border-slate-100 pt-3 first:border-0 first:pt-0">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
+                <p>Elastyczność technologiczna — dobieram technologię pod wymagania projektu.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DOSTĘPNOŚĆ / CTA -->
+        <div class="mt-6 rounded-2xl border border-slate-200 bg-slate-50/80 px-4 py-3 md:px-5 md:py-4 flex items-center justify-between gap-4">
+          <div class="text-sm">
+            <div class="text-slate-500">Zarezerwuj termin bezpłatnej konsultacji</div>
+          </div>
+          <a href="#kontakt" class="rounded-2xl bg-slate-900 text-white px-5 py-2.5 text-sm font-medium shadow hover:bg-slate-800">
+            Umów się
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REALIZACJE / PORTFOLIO -->
+  <section id="realizacje" class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4">
+      <h2 class="text-3xl md:text-4xl font-bold">Wybrane realizacje</h2>
+      <p class="mt-2 text-slate-600">Kilka projektów, które pokazują, jak pracuję.</p>
+
+      <!-- APLIKACJE DEWELOPERSKIE -->
+      <h3 class="mt-10 text-xl md:text-2xl font-semibold">Aplikacje deweloperskie</h3>
+      <p class="mt-1 text-sm text-slate-500">Dedykowane narzędzia, automatyzacje, boty i systemy tworzone pod konkretny proces.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-sm">
+          <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=800" alt="Panel aplikacji" class="w-full h-40 object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">MadeMyDay — planer dnia</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Aplikacja webowa do planowania dnia z kalendarzem, zadaniami i przypomnieniami.
+              Stack: React, Node.js, MongoDB.
+            </p>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-sm">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800" alt="Konsola bota" class="w-full h-40 object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Bot monitorujący ogłoszenia</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Agregacja ogłoszeń z OLX/Otomoto i wysyłka w czasie rzeczywistym na Telegram.
+              Deep scan, filtry, logi, obsługa wielu źródeł.
+            </p>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-sm">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800" alt="Mapa sklepów" class="w-full h-40 object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Wyszukiwarka sklepów (POC)</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Prototyp wyszukiwarki lokalnych sklepów z filtrowaniem i notatkami.
+              Integracja z API, cache i paginacja.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- STRONY INTERNETOWE -->
+      <h3 class="mt-12 text-xl md:text-2xl font-semibold">Strony internetowe</h3>
+      <p class="mt-1 text-sm text-slate-500">Responsywne strony www nastawione na czytelność oferty i generowanie zapytań.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-sm">
+          <a href="https://kampery-czestochowa.pl/" target="_blank" rel="noopener noreferrer" class="block">
+            <div class="w-full h-40 bg-gradient-to-r from-brand-50 via-white to-brand-100 flex items-center justify-center">
+              <span class="text-brand-700 font-semibold text-sm">
+                Kampery Częstochowa — podgląd strony
+              </span>
+            </div>
+
+            <div class="p-5">
+              <h3 class="font-semibold">Kampery Częstochowa — strona firmowa</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Responsywna strona internetowa prezentująca ofertę wypożyczalni kamperów z Częstochowy.
+                Jasna prezentacja usług, CTA do kontaktu i szybki dostęp do kluczowych informacji.
+              </p>
+              <p class="mt-3 text-sm font-medium text-brand-700">Zobacz na żywo →</p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCES WSPÓŁPRACY -->
+  <section id="proces" class="py-20 bg-slate-100">
+    <div class="mx-auto max-w-7xl px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Jak pracuję?</h2>
+
+      <p class="mt-2 text-slate-600 max-w-2xl">
+        Transparentny, poukładany proces współpracy – od pierwszej rozmowy aż po wdrożenie i dalsze wsparcie.
+      </p>
+
+      <div class="mt-12 grid md:grid-cols-4 gap-6">
+
+        <!-- KROK 1 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex items-center gap-3">
+            <span class="h-8 w-8 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-sm font-semibold">
+              1
+            </span>
+            <div class="text-sm font-semibold text-brand-700">Krok 1</div>
+          </div>
+
+          <h3 class="mt-3 font-semibold text-slate-900">Konsultacja</h3>
+          <p class="mt-2 text-sm text-slate-600">
+            Omawiamy cel, zakres, budżet i oczekiwania. Po rozmowie otrzymujesz krótkie podsumowanie.
+          </p>
+        </div>
+
+        <!-- KROK 2 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex items-center gap-3">
+            <span class="h-8 w-8 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-sm font-semibold">
+              2
+            </span>
+            <div class="text-sm font-semibold text-brand-700">Krok 2</div>
+          </div>
+
+          <h3 class="mt-3 font-semibold text-slate-900">Propozycja rozwiązania</h3>
+          <p class="mt-2 text-sm text-slate-600">
+            Przygotowuję makietę/zakres, rozbijam projekt na etapy, tworzę wycenę i harmonogram.
+          </p>
+        </div>
+
+        <!-- KROK 3 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex items-center gap-3">
+            <span class="h-8 w-8 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-sm font-semibold">
+              3
+            </span>
+            <div class="text-sm font-semibold text-brand-700">Krok 3</div>
+          </div>
+
+          <h3 class="mt-3 font-semibold text-slate-900">Realizacja</h3>
+          <p class="mt-2 text-sm text-slate-600">
+            Implementacja funkcjonalności, testy, optymalizacja i przygotowanie do wdrożenia.
+          </p>
+        </div>
+
+        <!-- KROK 4 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex items-center gap-3">
+            <span class="h-8 w-8 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-sm font-semibold">
+              4
+            </span>
+            <div class="text-sm font-semibold text-brand-700">Krok 4</div>
+          </div>
+
+          <h3 class="mt-3 font-semibold text-slate-900">Wdrożenie i wsparcie</h3>
+          <p class="mt-2 text-sm text-slate-600">
+            Deploy, monitoring, dokumentacja, szkolenie. Opcjonalny support i dalszy rozwój.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CENNIK -->
+  <section id="cennik" class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4">
+      <h2 class="text-3xl md:text-4xl font-bold">Cennik</h2>
+      <p class="mt-2 text-slate-600 max-w-2xl">
+        Każdy projekt wyceniam indywidualnie. Cena zależy przede wszystkim od
+        trudności i złożoności rozwiązania, czasu potrzebnego na jego przygotowanie
+        oraz realnego nakładu pracy po mojej stronie.
+      </p>
+
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <h3 class="font-semibold text-lg">Co wpływa na koszt?</h3>
+          <ul class="mt-3 text-sm list-disc pl-5 space-y-1 text-slate-600">
+            <li>Trudność projektu i zakres funkcjonalności.</li>
+            <li>Czas potrzebny na zaprojektowanie, implementację i testy.</li>
+            <li>Nakład pracy związany z integracjami, utrzymaniem i wdrożeniem.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-dashed border-brand-200 bg-white p-6">
+          <h3 class="font-semibold text-lg">Jak wygląda wycena?</h3>
+          <p class="mt-3 text-sm text-slate-600">
+            Po krótkiej rozmowie i ustaleniu wymagań przygotowuję propozycję zakresu prac
+            wraz z estymacją kosztów. Dzięki temu wiesz z góry, ile zapłacisz i co dokładnie
+            otrzymasz w ramach współpracy.
+          </p>
+          <p class="mt-4 text-sm text-brand-700 font-medium">
+            Najprościej — napisz kilka słów o projekcie w sekcji kontakt, a wrócę z wyceną.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-br from-brand-700 to-brand-900 text-white">
+    <div class="mx-auto max-w-7xl px-4 grid md:grid-cols-3 gap-8 items-center">
+      <div class="md:col-span-2">
+        <h2 class="text-3xl md:text-4xl font-bold">Masz pomysł? Zamieńmy go w działający produkt.</h2>
+        <p class="mt-3 text-brand-100">Krótka rozmowa pozwoli ocenić zakres, ryzyka i szybkie ścieżki dowiezienia wartości.</p>
+      </div>
+     <div class="flex gap-3 md:justify-end">
+
+  <!-- BUTTON 1 – biały z eleganckim hoverem -->
+  <a
+  href="#kontakt"
+  class="rounded-2xl bg-white text-brand-800 px-5 py-3 font-medium
+         transition-all duration-200 shadow-sm
+         hover:bg-brand-100 hover:shadow-lg hover:-translate-y-[2px]"
+>
+  Umów konsultację
+</a>
+
+
+  <!-- BUTTON 2 – outline z lekkim pojaśnieniem -->
+ <a
+  href="#realizacje"
+  class="rounded-2xl px-5 py-3 border border-white/40 text-white
+         transition-all duration-200
+         hover:bg-white/20 hover:border-white hover:-translate-y-[2px]"
+>
+  Zobacz projekty
+</a>
+
+
+</div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="py-16 bg-slate-100">
+    <div class="mx-auto max-w-7xl px-4">
+      <h2 class="text-3xl md:text-4xl font-bold">Kontakt</h2>
+      <p class="mt-2 text-slate-600">
+        Napisz kilka słów o projekcie (cel, termin, budżet). Odpowiem z propozycją najpóźniej następnego dnia roboczego.
+      </p>
+
+      <div class="mt-8 grid md:grid-cols-2 gap-10">
+
+       <!-- FORMULARZ -->
+<div class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
+  <form id="contactForm" class="space-y-4" novalidate>
+  <!-- Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="7fdcf71d-0508-4536-a3e9-0832907eda5b">
+
+  <!-- Temat maila który dostaniesz -->
+  <input type="hidden" name="subject" value="Nowa wiadomość z formularza — Jakub Kędzia">
+
+  <!-- Nazwa formularza -->
+  <input type="hidden" name="from_name" value="Formularz www — Jakub Kędzia">
+
+  <!-- Wysyłaj Reply-To na mail klienta -->
+  <input type="hidden" name="replyto" value="email">
+
+  <!-- Imię i nazwisko -->
+  <div>
+    <label class="block text-sm font-medium">Imię i nazwisko</label>
+    <input
+      required
+      type="text"
+      name="name"
+      id="name"
+      class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-2 outline-none focus:ring-2 focus:ring-brand-300"
+      placeholder="Imię i nazwisko"
+    />
+  </div>
+
+  <!-- E-mail -->
+  <div>
+    <label class="block text-sm font-medium">E-mail</label>
+    <input
+      required
+      type="email"
+      name="email"
+      id="email"
+      class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-2 outline-none focus:ring-2 focus:ring-brand-300"
+      placeholder="Adres e-mail"
+    />
+  </div>
+
+  <!-- Opis -->
+  <div>
+    <label class="block text-sm font-medium">Opis projektu</label>
+    <textarea
+      required
+      name="message"
+      id="message"
+      rows="5"
+      class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-2 outline-none focus:ring-2 focus:ring-brand-300"
+      placeholder="Czego potrzebujesz? Jaki cel chcesz osiągnąć?"
+    ></textarea>
+  </div>
+
+  <!-- Komunikaty -->
+  <div
+  id="formStatus"
+  class="text-sm font-medium"
+  role="status"
+  aria-live="polite"
+></div>
+
+  <!-- Przycisk -->
+  <button
+    id="submitBtn"
+    type="submit"
+    class="w-full rounded-2xl bg-brand-600 px-5 py-3 text-white shadow hover:bg-brand-700 transition"
+  >
+    Wyślij
+  </button>
+
+  <p class="text-xs text-slate-500">
+    Klikając „Wyślij”, wyrażasz zgodę na kontakt zwrotny w celu omówienia zapytania.
+  </p>
+
+</form>
+</div>
+
+
+       <!-- INFO KONTAKTOWE -->
+<div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6 md:p-7 shadow-sm">
+  <!-- Nagłówek karty -->
+  <div class="flex items-start justify-between gap-4">
+    <div>
+      <div class="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">
+        Kontakt
+      </div>
+      <h3 class="text-xl font-semibold text-slate-900 mt-1">
+        Bezpośredni kontakt
+      </h3>
+      <p class="mt-1 text-xs text-slate-500">
+        Odpowiadam zazwyczaj tego samego dnia roboczego.
+      </p>
+    </div>
+
+    <div class="h-11 w-11 rounded-full bg-brand-50 flex items-center justify-center shadow-inner">
+      <span class="text-lg">📨</span>
+    </div>
+  </div>
+
+  <!-- „meta” info -->
+  <div class="mt-4 inline-flex items-center gap-2 rounded-full bg-white/70 border border-slate-100 px-3 py-1.5 text-[11px] font-medium text-slate-500">
+    <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+    Przyjmuję nowe zlecenia
+  </div>
+
+  <!-- Dane kontaktowe -->
+<div class="mt-6 space-y-3 text-sm text-slate-700">
+
+  <!-- E-mail -->
+  <div class="flex items-center gap-3 rounded-xl bg-white/80 border border-slate-100 px-3 py-2">
+    <div class="h-8 w-8 rounded-full bg-brand-50 flex items-center justify-center text-brand-600 text-sm">
+      ✉️
+    </div>
+    <div class="flex-1 min-w-0">
+      <div class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+        E-mail
+      </div>
+      <div class="flex flex-wrap items-center gap-2">
+        <span id="contactEmail" class="font-medium truncate">
+          keedziajakub@gmail.com
+        </span>
+        <button
+          id="copyBtn"
+          onclick="copyEmail()"
+          class="text-xs font-medium text-brand-700 hover:text-brand-800"
+        >
+          Kopiuj
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Telefon -->
+  <div class="flex items-center gap-3 rounded-xl bg-white/80 border border-slate-100 px-3 py-2">
+    <div class="h-8 w-8 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600 text-sm">
+      📞
+    </div>
+    <div>
+      <div class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+        Telefon
+      </div>
+      <a
+        href="tel:+48516399220"
+        class="font-medium text-brand-700 hover:text-brand-800"
+      >
+        +48 516 399 220
+      </a>
+    </div>
+  </div>
+
+  <!-- GitHub -->
+  <div class="flex items-center gap-3 rounded-xl bg-white/80 border border-slate-100 px-3 py-2">
+    <div class="h-8 w-8 rounded-full bg-slate-900 flex items-center justify-center text-white text-sm">
+      <span class="font-semibold">GH</span>
+    </div>
+    <div>
+      <div class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+        GitHub
+      </div>
+      <a
+        href="https://github.com/jakubkedzia"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-medium text-brand-700 hover:text-brand-800 break-all"
+      >
+        github.com/jakubkedzia
+      </a>
+    </div>
+  </div>
+
+  <!-- LinkedIn -->
+  <div class="flex items-center gap-3 rounded-xl bg-white/80 border border-slate-100 px-3 py-2">
+    <div class="h-8 w-8 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 text-xs font-semibold">
+      in
+    </div>
+    <div>
+      <div class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+        LinkedIn
+      </div>
+      <a
+        href="https://www.linkedin.com/in/jakub-kedzia/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-medium text-brand-700 hover:text-brand-800 break-all"
+      >
+        linkedin.com/in/jakub-kedzia
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+  </div>
+</div>
+          <!-- DLACZEGO JA — PEŁNA SZEROKOŚĆ -->
+<div class="mt-8 md:col-span-2">
+  <div class="rounded-2xl border border-slate-200 bg-white p-8 md:p-10 shadow-sm">
+
+    <!-- Nagłówek -->
+    <div class="flex items-center gap-4 mb-6">
+      <div class="h-12 w-12 rounded-full bg-brand-50 flex items-center justify-center text-brand-600 text-sm font-semibold">
+        JA
+      </div>
+      <div>
+        <div class="text-xs font-semibold tracking-[0.18em] text-slate-500 uppercase">
+          Dlaczego warto ze mną pracować
+        </div>
+        <h3 class="text-2xl font-semibold text-slate-900 mt-1">Dlaczego ja?</h3>
+      </div>
+    </div>
+
+    <!-- Lista -->
+    <ul class="grid md:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-6 text-[15px] leading-relaxed text-slate-700">
+
+      <li class="flex items-start gap-3">
+        <span class="mt-1 h-6 w-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-[11px] font-semibold">1</span>
+        <p><b>Jasna komunikacja</b> — odpowiadam szybko, tłumaczę proces, proponuję najlepsze rozwiązania.</p>
+      </li>
+
+      <li class="flex items-start gap-3">
+        <span class="mt-1 h-6 w-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-[11px] font-semibold">2</span>
+        <p><b>Praca etapami</b> — krótkie iteracje, przewidywalne koszty i terminy.</p>
+      </li>
+
+      <li class="flex items-start gap-3">
+        <span class="mt-1 h-6 w-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-[11px] font-semibold">3</span>
+        <p><b>Wdrożenie + opieka</b> — deploy, monitoring, dokumentacja, wsparcie.</p>
+      </li>
+
+      <li class="flex items-start gap-3">
+        <span class="mt-1 h-6 w-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-[11px] font-semibold">4</span>
+        <p><b>Realne doświadczenie</b> — aplikacje deweloperskie, strony internetwowe, administracja.</p>
+      </li>
+
+      <li class="flex items-start gap-3">
+        <span class="mt-1 h-6 w-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-[11px] font-semibold">5</span>
+        <p><b>Podejście biznesowe</b> — liczy się wartość, nie sama technologia.</p>
+      </li>
+
+      <li class="flex items-start gap-3">
+        <span class="mt-1 h-6 w-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-[11px] font-semibold">6</span>
+        <p><b>Elastyczność technologiczna</b> — dobieram narzędzia pod cel projektu.</p>
+      </li>
+
+      <li class="flex items-start gap-3">
+        <span class="mt-1 h-6 w-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-[11px] font-semibold">7</span>
+        <p><b>Czysty kod</b> — dobra architektura, bezpieczeństwo, logowanie.</p>
+      </li>
+
+      <li class="flex items-start gap-3">
+        <span class="mt-1 h-6 w-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-[11px] font-semibold">8</span>
+        <p><b>Skupienie na UX</b> — szybkie, intuicyjne, przyjemne interfejsy.</p>
+      </li>
+
+      <li class="flex items-start gap-3">
+        <span class="mt-1 h-6 w-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-[11px] font-semibold">9</span>
+        <p><b>Transparentna wycena</b> — jasne zasady, zero ukrytych kosztów.</p>
+      </li>
+
+      <li class="flex items-start gap-3">
+        <span class="mt-1 h-6 w-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-[11px] font-semibold">10</span>
+        <p><b>Wsparcie strategiczne</b> — doradzam kierunek, priorytety, decyzje.</p>
+      </li>
+
+    </ul>
+
+  </div>
+</div>
+
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4">
+      <h2 class="text-3xl md:text-4xl font-bold">FAQ — najczęstsze pytania</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <details class="rounded-2xl border border-slate-200 p-5 bg-white">
+          <summary class="font-semibold cursor-pointer">Na jakiej podstawie wyceniasz projekt?</summary>
+          <p class="mt-3 text-sm text-slate-600">Po krótkiej rozmowie przygotowuję zakres i estymację godzinową z podziałem na etapy. Cena rośnie wraz z zakresem, integracjami i terminem.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 p-5 bg-white">
+          <summary class="font-semibold cursor-pointer">Czy wystawiasz faktury?</summary>
+          <p class="mt-3 text-sm text-slate-600">Tak. Możliwa umowa B2B lub umowa o dzieło/zlecenie — w zależności od projektu.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 p-5 bg-white">
+          <summary class="font-semibold cursor-pointer">Czy przejmujesz istniejące projekty?</summary>
+          <p class="mt-3 text-sm text-slate-600">Tak, o ile kod i licencje na to pozwalają. Zaczynam od audytu i planu naprawczego.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 p-5 bg-white">
+          <summary class="font-semibold cursor-pointer">Jak szybko możesz zacząć?</summary>
+          <p class="mt-3 text-sm text-slate-600">Zazwyczaj w ciągu 3–7 dni roboczych od podpisania umowy i akceptacji zakresu.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- STOPKA -->
+  <footer class="py-10 border-t border-slate-200 bg-slate-100">
+    <div class="mx-auto max-w-7xl px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-sm">© <span id="year"></span> Jakub Kędzia. Wszelkie prawa zastrzeżone.</div>
+      <div class="text-xs text-slate-500">Administratorem danych jest Jakub Kędzia. Dane z formularza przetwarzam wyłącznie w celu kontaktu zwrotnego. </div>
+    </div>
+  </footer>
+
+  <!-- Twój główny skrypt JS -->
+  <script src="main.js" defer></script>
+
+  <!-- Strukturalne dane JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jakub Kędzia",
+    "jobTitle": "Software Developer",
+    "url": "https://twojadomena.pl/",
+    "sameAs": [
+      "https://github.com/jakubkedzia",
+      "https://www.linkedin.com/in/jakub-kedzia/"
+    ],
+    "knowsAbout": ["Web Development", "React", "Node.js", "MongoDB", "APIs", "Automation", "Bots"]
+  }
+  </script>
+</body>
+</html>
