@@ -14,3 +14,9 @@
   outline: none;
   box-shadow: 0 0 0 2px rgba(248, 113, 113, 0.8);
 }
+
+/* Bez poziomego scrolla na małych ekranach */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

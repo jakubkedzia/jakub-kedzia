@@ -113,4 +113,21 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.classList.remove("opacity-60", "cursor-not-allowed");
     submitBtn.textContent = "Wyślij";
   });
+
+  // --- MENU MOBILNE ---
+  const mobileBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  if (mobileBtn && mobileMenu) {
+    mobileBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Po kliknięciu w link w menu mobilnym – zamknij menu
+    mobileMenu.addEventListener("click", (e) => {
+      if (e.target.tagName === "A") {
+        mobileMenu.classList.add("hidden");
+      }
+    });
+  }
 });

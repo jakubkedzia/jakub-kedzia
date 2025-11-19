@@ -52,7 +52,18 @@
         </a>
       </div>
 
-      <!-- ŚRODEK: menu -->
+      <!-- PRZYCISK MOBILNY (tylko na telefonach) -->
+      <button
+        id="mobileMenuBtn"
+        class="md:hidden inline-flex items-center justify-center rounded-xl border border-slate-200 px-3 py-2 text-slate-700 bg-white/80"
+        aria-label="Otwórz menu"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- ŚRODEK: menu (desktop) -->
       <nav class="hidden md:flex flex-1 justify-center gap-6 text-sm">
         <a href="#uslugi" class="hover:text-brand-700">Usługi</a>
         <a href="#realizacje" class="hover:text-brand-700">Realizacje</a>
@@ -61,7 +72,7 @@
         <a href="#kontakt" class="hover:text-brand-700">Kontakt</a>
       </nav>
 
-      <!-- PRAWO: przycisk -->
+      <!-- PRAWO: przycisk (desktop) -->
       <div class="hidden md:flex flex-1 justify-end">
         <a
           href="#kontakt"
@@ -73,6 +84,20 @@
 
     </div>
   </header>
+
+  <!-- MENU MOBILNE -->
+  <nav
+    id="mobileMenu"
+    class="md:hidden hidden border-b border-slate-200 bg-white/95 glass"
+  >
+    <div class="mx-auto max-w-7xl px-4 py-3 flex flex-col gap-2 text-sm">
+      <a href="#uslugi" class="py-1 hover:text-brand-700">Usługi</a>
+      <a href="#realizacje" class="py-1 hover:text-brand-700">Realizacje</a>
+      <a href="#proces" class="py-1 hover:text-brand-700">Proces</a>
+      <a href="#cennik" class="py-1 hover:text-brand-700">Cennik</a>
+      <a href="#kontakt" class="py-1 hover:text-brand-700">Kontakt</a>
+    </div>
+  </nav>
 
   <!-- HERO -->
   <section class="relative overflow-hidden bg-white">
@@ -243,7 +268,7 @@
 
       <!-- STRONY INTERNETOWE -->
       <h3 class="mt-12 text-xl md:text-2xl font-semibold">Strony internetowe</h3>
-      <p class="mt-1 text-sm text-slate-500">Responsywne strony www nastawione na czytelność oferty i generowanie zapytań.</p>
+      <p class="mt-1 text-sm text-slate-500">Responsywne strony www z przejrzystym, intuicyjnym interfejsem, zaprojektowane pod wygodę użytkownika.</p>
       <div class="mt-6 grid md:grid-cols-3 gap-6">
         <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-sm">
           <a href="https://kampery-czestochowa.pl/" target="_blank" rel="noopener noreferrer" class="block">
@@ -738,12 +763,12 @@
     "@type": "Person",
     "name": "Jakub Kędzia",
     "jobTitle": "Software Developer",
-    "url": "https://twojadomena.pl/",
+    "url": "https://jakubkedzia.github.io/jakub-kedzia/",
     "sameAs": [
       "https://github.com/jakubkedzia",
       "https://www.linkedin.com/in/jakub-kedzia/"
     ],
-    "knowsAbout": ["Web Development", "React", "Node.js", "MongoDB", "APIs", "Automation", "Bots"]
+    "knowsAbout": ["Web Development", "React", "Node.js", "MongoDB", "APIs", "Automation", "Bots", "Aplikacje Częstochowa", "Strony Internetowe Częstochowa"]
   }
   </script>
 </body>
